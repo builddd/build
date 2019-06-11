@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main(){
+   int a[5]={}; 
+   int b,i=0;
+   cin>>b;
+   while(b!=-1&&0<=b&&b<=100){
+       if(90<=b&&b<=100)
+       a[0]++;
+       else if(80<=b&&b<=89)
+       a[1]++;
+        else if(70<=b&&b<=79)
+       a[2]++;
+        else if(60<=b&&b<=69)
+       a[3]++;
+        else if(b<60)
+       a[4]++;
+       cin>>b;
+   }
+   while(i<5){
+       cout<<a[i]<<" ";
+       i++;
+   }
+}
